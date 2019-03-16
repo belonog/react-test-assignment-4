@@ -31,5 +31,6 @@
     "node-sass": "^4.11.0",
     "redux-logger": "^3.0.6",
     "typescript": "^3.3.3333"
-  }
+  },
+  "homepage": "https://belonog.github.io/react-test-assignment-4/"
 }
