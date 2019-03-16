@@ -1,0 +1,80 @@
+.house-card {
+    &__img {
+        cursor: pointer;
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+
+        &-wrap {
+            position: relative;
+
+            &::before {
+                display: block;
+                content: "";
+                width: 100%;
+                padding-top: 100%;
+            }
+
+            &-ratio {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+            }
+        }
+
+        &-indicator {
+            display: inline-block;
+            width: 7px;
+            height: 7px;
+            border: 2px solid #fff;
+            border-radius: 50%;
+            margin: 4px;
+            box-shadow: 0 0 5px rgb(0, 0, 0);
+
+            &.current {
+                background: #fff;
+            }
+
+            &-list {
+                position: absolute;
+                display: flex;
+                list-style: none;
+                padding: 0;
+                justify-content: center;
+                bottom: 5px;
+                width: 100%;
+            }
+        }
+    }
+
+    &__address {
+        font-size: 0.9em;
+    }
+
+    &__price {
+        font-size: 1.3em;
+        font-weight: bold;
+        margin-bottom: 0.7em;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+       .house-card__img-wrap & {
+            position: absolute;
+            top: 20px;
+            left: 0;
+            margin: 0 20px;
+            color: #fff;
+            text-shadow: 0 0 5px #000;
+        }
+    }
+
+    &__area {
+        font-size: 0.8em;
+        color: #4b4b4b;
+        margin-top: 1em;
+    }
+}
